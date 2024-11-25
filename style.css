@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Glitch&display=swap');
+
+/*-------------------------------------------------------------------------- BODY ---------------------------------------------------------------------------------*/
+
+body {
+    background-color: #273260;
+}
+
+/*-------------------------------------------------------------------------- TEXT FORMAT ---------------------------------------------------------------------------------*/
+
+.fonttop {
+    color: #273260;
+    font-family: "Josefin Sans";
+    font-size: 15pt;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.titulotop {
+    color: #273260;
+    font-family: "Josefin Sans";
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: #273260;
+    text-decoration: none;
+    transition: color 1s, background-color 1s; /* Unificação */
+}
+
+/*-------------------------------------------------------------------------- CORPO ---------------------------------------------------------------------------------*/
+
+div#corpo {
+    width: 95%;
+    margin: -10px auto 0px auto;
+    background-color: #cedfe7;
+    padding: 20px;
+}
+
+/*-------------------------------------------------------------------------- MENU ---------------------------------------------------------------------------------*/
+
+header#menu {
+    display: block;
+    text-align: center;
+    border-bottom: #273260 solid;
+}
+
+header#menu nav {
+    display: inline-block;
+    text-align: center;
+}
+
+header#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+
+header#menu li {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #76afe6;
+    border: 2px solid #273260;
+    border-radius: 10px; /* Corrigido de `#76afe6` */
+    box-shadow: 0 0 10px #273260;
+    font-size: 16px;
+    color: #273260;
+    font-weight: 600;
+    transition: background-color .5s;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+header#menu li:hover {
+    background-color: #273260;
+}
+
+header#menu li:hover a {
+    color: #eb876d;
+}
+
+/*-------------------------------------------------------------------------- ARTICLE me ---------------------------------------------------------------------------------*/
+
+.section-me {
+    padding: 60px;
+    color: #273260;
+    margin: 25px 0px 25px 0px;
+    border-bottom: #273260;
+}
+
+.section-me h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 0;
+}
+
+.section-me h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.home-info h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+    text-indent: 0px; 
+}
+
+@keyframes display-text { 
+    25%, 
+    100% { 
+        display: none; 
+    }
+}
+
+.home-info h2 span::before { 
+    content: attr(data-text); 
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #273260;
+    color: #76afe6;
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: fill-text 4s linear infinite; 
+}
+
+@keyframes fill-text { 
+    10%, 
+    100% { 
+        width: 0; 
+    }
+    70%, 
+    90% {  
+        width: 100%; 
+    }
+}
+
+.home-info p {
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.section-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #76afe6;
+    border: 2px solid #273260;
+    border-radius: 10px; /* Corrigido de `#76afe6` */
+    box-shadow: 0 0 10px #273260;
+    font-size: 16px;
+    color: #273260;
+    font-weight: 600;
+    transition: background-color .5s;
+}
+
+.section-btn:hover {
+    background-color: #273260; 
+    color: #eb876d;
+    box-shadow: none;
+}
+
+.btn-container{
+    text-align: center;
+    margin-top: 80px;
+}
+
+/*-------------------------------------------------------------------------- ARTICLE 1 ---------------------------------------------------------------------------------*/
+
+article#article-main {
+    border: #273260 2px solid;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*-------------------------------------------------------------------------- ASIDE ---------------------------------------------------------------------------------*/
+
+p#formac{
+    text-indent: 0;
+}
+
+div#aside-container{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    border-bottom: #273260 solid;
+}
+
+aside#aside-main {
+    border: #273260 2px solid;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    height: 4;
+    margin-bottom: 60px;
+}
+
+aside#aside-main span {
+    text-align: center;
+}
+
+.img-circ{
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    object-position: 90%;
+    border: #273260 2px solid;
+}
+
+/*-------------------------------------------------------------------------- CONTATO ---------------------------------------------------------------------------------*/
+
+div#contato a{
+color: #76afe6;
+}

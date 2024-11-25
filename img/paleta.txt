@@ -1,0 +1,13 @@
+azul guarda chuva: #273260
+marrom tunica: #eb876d
+branco willump: #cedfe7
+azul olho willump: #76afe6
+
+cores fracas:
+marrom tunica: #eb876d
+branco willump: #cedfe7
+azul neve: #87a6b4
+
+cores fortes:
+azul olho willump: #76afe6
+azul guarda chuva: #273260
